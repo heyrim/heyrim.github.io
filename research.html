@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heyrim Cho | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+
+<body>
+
+<!-- Requires Foundation 4 | visit http://foundation.zurb.com to download -->
+
+<!-- Header and Nav --> 
+    <div class="row">
+        <div class="large-8 columns">
+            <h3> &nbsp; </h3>
+            <ul class="inline-list right" style="font-family:verdana;">
+                <a href="./main.html"> Home &nbsp; </a>
+                <a href="./research.html"> Research &nbsp;</a>
+                <a href="./teaching.html"> Teaching &nbsp;</a>
+                <a href="./Heyrim_Cho_CV_2018.pdf" target="_blank"> CV &nbsp;</a>
+                <a href="./contact.html"> Contact </a>
+            </ul> 
+        <hr />
+        </div>
+        
+
+
+  <!-- End Header and Nav -->
+  
+  
+  <div class="row">    
+    
+    <!-- Main Content Section -->
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    
+    <div class="large-8 columns">
+
+	<h5> <font color="black">    Research Interests </font></h5>
+
+<p> 
+&emsp;  Mathematical and Computational Biology, Cancer modeling  <br> 
+&emsp;  Stochastic modeling and Uncertainty Quantification  <br>
+&emsp;  Computational methods for high-dimensional stochastic systems  <br>
+&emsp;  Multi-scale modeling and simulations  <br>
+&emsp;  Numerical PDE and High-performance computing  <br><br>
+      
+ </p> 
+
+<p>
+<h5>  <font color="black">  1. Mathematical and Computational Biology  </font> </h5>
+<h5>  <font color="black"> 1-1. Modeling Dynamics of Drug Resistance
+      and Spatial Heterogeneity in Tumor  </font> </h5>
+Drug resistance is a major challenge to successful cancer treatments. For a better understanding of chemotherapy-induced selection of drug-resistant traits during tumor growth, we develop a mathematical model to study the dynamics of drug resistance in solid tumor [7,9]. 
+Our model follows the dynamics of the tumor, assuming that the cancer cell population depends on a phenotype variable that corresponds to the resistance level to a cytotoxic drug. 
+The model successfully integrates the phenotype structured approach with an asymmetric tumor growth model in space. 
+Through analysis and simulations, we study the impact of spatial and phenotypic heterogeneity on the tumor growth under chemotherapy. 
+We demonstrate that heterogeneous cancer cells may emerge due to the selection dynamics of the environment, and our model predicts multiple resistant traits emerging at different locations within the tumor. 
+Moreover, a higher dosage of the cytotoxic drug may delay a relapse, yet, when this happens, a more resistant trait emerges. 
+An estimation of expansion rate of the tumor boundary and the time of relapse are 
+      provided as well.
+      
+<center>
+<div style="display:inline-block;vertical-align:top;">
+  <img src="img/CancerGrowth.png" height="92" width="287"> 
+</div>
+<div style="display:inline-block;">
+<div ALIGN=LEFT> <h5><small>
+  <br>  <br>  
+   Figure. Various growth patterns predicted 
+  <br>
+  by the model (top) and the corresponding 
+  <br>
+   level of mean resistant trait (bottom) [9].
+</small></h5></div>
+</div>
+</center>
+
+</p>
+
+
+
+<p> 
+<h5>  <font color="black"> 1-2. Study of Combination Therapy in Cancer Treatments </font> </h5>
+
+Designing effective anti-cancer strategies can be enhanced by 
+mathematical models and techniques. We model and study 
+potential combination and scheduling of multiple drugs with different 
+mechanisms to overcome drug resistance. 
+In the following series of work, we focus on developing combination therapies while taking account of the drug-resistant population into the model. 
+We first study the effectiveness of a combination of cytotoxic and cytostatic drugs when the cancer cells consist of heterogeneous cell population in resistance to chemotherapy [7]. 
+In particular, by aiming at minimizing the growth rate of the most resistant trait, we show that the resistant cancer cells can be eliminated by the proposed combination of treatment. 
+Moreover, an adaptive therapy can be administered by considering the maximal fitness traits. In addition, we study a combination of cytotoxic and targeted drugs while considering resistance to both drugs [12]. 
+We demonstrate the effectiveness of targeted drugs when cell
+competition between cancer cells and normal tissue cells are
+aggressive, and propose alternating scheduling based on the ratio of
+resistant cells to each drug.
+ 
+<center>
+<img src="img/CancerPntp.png" height="92" width="300"> 
+<img src="img/CancerComp.png" height="92" width="200"> 
+</center>
+      
+</p>
+
+
+
+<p> 
+<h5>  <font color="black"> 1-3. Continuum Cell State models from High-dimensional Gene Expression Data </font> </h5>
+
+Single-cell RNA sequencing data (scRNA-seq) data provides the gene expression level that is in the dimensionality of O(10<sup>5</sup>) per each individual cell. 
+By applying dimension reduction techniques, 
+the data reveals a continuum cell state, that 
+changes the classical view of cell biology assuming discrete cell states. 
+We first study whether the assumption of continuum cell states yields distinct results from discrete cell state 
+models, 
+particularly in the context of anti-cancer drug resistance [11], 
+by comparing the binary cell state model of drug-sensitive and drug-resistant to the continuum resistance model. 
+Assuming continuous state may result in different dynamics when compared with the predictions of classical discrete models, and we classify the continuum models when they yield different dynamical patterns in the emerging heterogeneity in response to chemotherapy. 
+Further, 
+we develop a continuum cell state model using the gene data of hematopoietic stem cells (HSC) [10]. Diffusion mapping is applied to the data to reduce dimensionality.  
+The trajectories of cell states in the continuum differentiation space 
+are abstracted 
+in the first few principal diffusion component space 
+as a graph, then modeled as directed and random movement on the graph with PDEs. 
+We simulate normal and abnormal differentiation processes 
+(e.g. acute myeloid leukemia (AML) progression), and predict the emergence of cells in novel intermediate states of differentiation, that is consistent with 
+the experiments of AML mouse mode. 
+
+<center>
+<img src="img/AMLGraph.png" height="92" width="110"> 
+<img src="img/AMLEdge.png" height="92" width="257"> 
+</center>
+      
+</p>
+
+
+
+<p> 
+
+<h5>  <font color="black"> 2. Uncertainty Quantification </font> </h5>
+<h5>  <font color="black"> 2-1. Modeling and Simulation of Stochastic System with Colored Noise </font> </h5>
+
+Evolution equations of the response-excitation probability density
+function (PDF) generalize the existing kinetic equations and enable us
+to compute the stochastic solution of systems driven by random
+excitations including colored noise [1]. We develop an efficient
+high-order numerical method for this system, involving a
+non-conforming adaptive discontinuous Galerkin (DG) method in the
+response space and the probabilistic collocation method (PCM) in the
+excitation variables [2]. In addition to showing that the system
+agrees with the effective Fokker-Planck equation in the white noise
+limit, we study chaotic and bi-stable oscillator problems and Burgers
+equation subjected to colored noise [2,4]. The algorithm captures
+stiff and localized solutions accurately.   
+
+<center>
+<div style="display:inline-block;vertical-align:top;">
+  <img src="img/PDF_Duffing.png" height="92" width="227"> 
+</div>
+<div style="display:inline-block;">
+<div ALIGN=LEFT> <h5><small>
+  <br>
+   Figure. Time evolution of the response 
+  <br>
+   PDF of Duffing oscillator and a snapshot 
+  <br>
+   of adaptive grid. 
+  </small></h5></div>
+  </div>
+</center>
+  
+</p>
+
+
+
+
+<p> 
+<h5>  <font color="black"> 2-2. Efficient Numerical methods for High-dimensional Stochastic Systems </font> </h5>
+
+  High-dimensionality is one of the major challenges in uncertainty quantification. In particular, kinetic models and simulations of realistic physical systems are generally more expensive than moment-based methods, while they provide 
+the PDF that contains complete statistical structure of the stochastic dynamics.   Thus, we develop several algorithms based on 
+well-known approximations for high-dimensional functions, namely, the sparse grid (SG) approximation, high-dimensional model representation (ANOVA) and tensor decomposition [6]. 
+The ANOVA expansion superimposes the solution regarding the low-order interaction, while the tensor decomposition, approximates the solution as a series of low-dimensional functional products. 
+The algorithms based on 
+these methods reduce the computation into a series of lower-dimensional operations. In addition to high-dimensional kinetic simulation, we develop an adaptive reduced basis collocation 
+method to efficiently solve high-dimensional parameterized stochastic PDEs [8]. The method employs two stages of adaptive procedure based on PCM and ANOVA decomposition by exploring the low rank structure of the solution in the stochastic domain. 
+The method enables efficient simulation of anisotropic and irregular stochastic systems. 
+
+
+<center>
+<div style="display:inline-block;vertical-align:top;">
+  <img src="img/REPDF_schemes.png" height="92" width="187"> 
+</div>
+<div style="display:inline-block;">
+<div ALIGN=LEFT> <h5><small>
+  <br>
+   Figure. Range of applicable numerical methods for the kinetic 
+  <br>
+  equation with random parameters in terms of dimensionality
+  <br>
+  in the phase variables and the number of parameters. 
+</small></h5></div>
+</div>
+</center>
+
+</p>
+
+
+
+<p>
+<h5>  <font color="black"> 2-3. Representation of Multiple Correlated Stochastic Processes </font> </h5>
+
+The Karhunen-Loeve (KL) expansion is an effective mathematical representation of a non-stationary stochastic process used in stochastic simulations. 
+However, the representation is limited to a single process 
+or ensembles of statistically independent processes. 
+We extend the KL expansion to model multiple correlated 
+non-stationary stochastic processes focused on the mutual correlations [3].
+Two methods, muKL and mCKL, have been developed, where 
+the former is optimal in mean square error, 
+and the latter requires less computational cost. 
+The convergence of the expansion is proven analytically and demonstrated in numerical examples involving Gaussian processes as well as fractional Brownian motions. The proposed methods can be readily employed in stochastic simulation involving multi-correlated processes and mutually correlated data-driven problems for dimension reduction. Moreover, we develop local KL expansion to accompany domain decomposition methods in the physical space [5]. 
+The algorithm decomposes the series expansion to local sub-domains while preserving the global statistical structure. 
+
+<center>
+<div style="display:inline-block;vertical-align:top;">
+    <img src="img/mKL.png" height="92" width="227"> 
+</div>
+<div style="display:inline-block;">
+
+<div ALIGN=LEFT> <h5><small>
+  <br>
+   Figure. Sample trajectories of two stochastic processes 
+  <br>
+  generated by mKL method that are independent (left) 
+  <br>
+  and strongly correlated (right). 
+</small></h5></div>
+ 
+</div>
+</center>
+
+
+</p>
+
+  
+
+<p>	<h3><small> <font color="black">    Ongoing work </font> </small></h3> 
+<h4><small>
+&emsp; H. Cho, D. Levy, ‘Efficient numerical method for high-dimensional phenotypic structed models‘
+<br>
+&emsp; H. Cho, D. Levy ‘Drug induced resistance and therapy optimization using single-cell RNA sequencing data’
+<br>
+&emsp; H. Cho, K. Lee, B. Sousedik, ‘Dual-primal domain decomposition
+method with augmented Lagrangian for stochastic PDEs’
+<br>
+&emsp;  H. Cho, ‘Modeling spatial and phenotypic heterogeneity in EMT of cancer metastasis’ 
+<br>
+&emsp; H. Cho, R. Rockne, ‘Comparison of continuum models of Hematopoetic stem cell differentiation’
+<br>
+&emsp; H. Cho, ‘Tensor Train method for response-excitation PDF equations, Malakhov-Saichev equation’
+<br>
+</small></h4></p>
+   
+<p>	<h3><small> <font color="black">  Preprint  </font></small></h3> 
+<h4><small>
+&emsp; E. Kim, R. Schenck, J. West, W. Cross, V. Harris, J. McKenna, H. Cho, E. Coker, S. L-Kramer, K. Tsai, E. Flores, C. D. Gatenbee ‘Targeting the Untargetable: Predicting Pramlintide Resistance Using a Neural Network Based Cellular Automata’ bioRxiv, <a href="https://doi.org/10.1101/211383" target="_blank">https://doi.org/10.1101/211383</a>
+<br>
+&emsp; [12] H. Cho, D. Levy, 'The Impact of Competition Between Cancer
+Cells and Healthy Cells on Optimal Drug Delivery',
+<a href="https://arxiv.org/abs/1806.07477" target="_blank">https://arxiv.org/abs/1806.07477</a>, submitted, 2018 <br>
+</small></h4></p>
+
+<p>	<h3><small> <font color="black">  Publications  </font></small></h3> 
+<h4><small>
+&emsp; [11] H. Cho, D. Levy, 'Modeling continuous levels of resistance to
+multidrug therapy in cancer',  <a href="https://arxiv.org/abs/1806.07557" target="_blank">https://arxiv.org/abs/1806.07557</a>, Appl.Math.Model., 2018
+<br>
+&emsp; [10] H. Cho, K. Ayers, L. DePillis, Y-H. Kuo, J. Park,
+A. Radunskaya, R. Rockne, ‘<a href="https://www.tandfonline.com/doi/full/10.1080/23737867.2018.1472532" target="_blank">Modeling acute myeloid leukemia in a
+continuum of differentiation states</a>’, Lett.Biomath., 2018 
+<br>
+&emsp; [9] H. Cho, D. Levy, '<a href="https://www.sciencedirect.com/science/article/pii/S0022519317304654" target="_blank">Modeling the chemotherapy-induced selection
+of drug-resistant traits during tumor growth</a>', J. Theor. Biol. 436(7),
+2018
+<br>
+&emsp; [8] H. Cho, H. Elman, ‘<a href="https://arxiv.org/abs/1709.08597" target="_blank">Adaptive reduced basis collocation method
+based on PCM for anisotropic stochastic PDEs</a>’,
+Int. J. Uncertain. Quantif. 8(3), 2018
+<br>
+&emsp; [7] H. Cho, D. Levy,
+'<a href="https://link.springer.com/article/10.1007/s11538-017-0359-1" target="_blank">Modeling the dynamics of heterogeneity of
+solid tumors in response to chemotherapy</a>', Bull. Math. Bio. 79(12), 2017
+<br>
+&emsp; [6] H. Cho, D. Venturi, G. E. Karniadakis, ‘<a
+href="https://www.sciencedirect.com/science/article/pii/S0021999115007068"
+target="_blank">Numerical methods for high-dimensional probability density function equations</a>', J. Comput. Phys. 305, 2016
+<br>
+&emsp; [5] H. Cho, X. Yang, D. Venturi, G. E. Karniadakis, '<a
+href="https://epubs.siam.org/doi/abs/10.1137/140992060"
+target="_blank">Algorithms for propagating uncertainty across heterogeneous domains</a>', SIAM J. Sci. Comput. 37(6), 2015 
+<br>
+&emsp; [4] H. Cho,  D. Venturi, G. E. Karniadakis, ‘<a href="http://rspa.royalsocietypublishing.org/content/470/2171/20140080" target="_blank">Statistical analysis and simulation of random shocks in Burgers turbulence</a>’, Proc. R. Soc. A, 470(2171), 2014.
+<br>
+&emsp; [3] H. Cho, D. Venturi, G. E. Karniadakis, ‘<a href="https://www.sciencedirect.com/science/article/pii/S0266892013000702" target="_blank">Karhunen-Loeve expansion for multi-correlated stochastic processes</a>’, Probabilistic Eng. Mech., 2013  
+<br>
+&emsp; [2] H. Cho, D. Venturi, G. E. Karniadakis, ‘<a href="https://epubs.siam.org/doi/abs/10.1137/12088896X" target="_blank">Adaptive discontinuous Galerkin method for response-excitation PDF equations</a>’,  SIAM J. Sci. Comput. 2013  
+<br>
+&emsp; [1] D. Venturi, T. P. Sapsis, H. Cho, G. E. Karniadakis, ‘<a href="http://rspa.royalsocietypublishing.org/content/468/2139/759" target="_blank">A computable evolution equation for the joint response-excitation probability density function of stochastic dynamical systems</a>', Proc. R. Soc. A 2012 
+</small></h4>
+</p>
+
+
+<p>	<h3><small> <font color="black">    Book Chapters </font> </small></h3> 
+<h4><small>
+&emsp; H. Cho, D. Venturi, G. E. Karniadakis, ‘Numerical methods for high-dimensional kinetic equations’, SEMA
+SIMAI Springer Series, Uncertainty Quantification for Hyperbolic and
+Kinetic Equations, 2017
+<br>
+&emsp; D. Venturi, H. Cho, G. E. Karniadakis, ‘Mori-Zwanzig approach to uncertainty quantification’, Springer,
+Handbook on Uncertainty Quantification, 2017
+<br>
+</small></h4>
+</p>
+
+
+<p>	<h3><small> <font color="black">   Theses </font> </small></h3> 
+<h4><small>
+&emsp; H. Cho, ‘High-Dimensional
+Response-Excitation PDF Methods for Uncertainty Quantification and
+Stochastic Modeling’, Brown University (Ph.D. 2015), Advisor: Professor
+G. E. Karniadakis. <a href="./Thesis_PhD_HeyrimCho.pdf" target="_blank">PDF</a>
+<br>
+&emsp; H. Cho, ‘Implementation of Dual Iterative Substructuring
+methods on a Parallel computer’, KAIST (MS 2009), Advisor: Professor
+C-O, Lee. <a href="./Thesis_MS_HeyrimCho.pdf" target="_blank">PDF</a> 
+<br>
+</small></h4>
+</p>
+
+            
+    </div>
+  </div>
+    
+  
+  <!-- Footer -->
+  
+  <!-- footer class="row" -->
+    <div class="large-8 columns">
+      <hr /> <h6>
+        <h10 color="#737CA1" style="font-family:'Courier New';" > Follow your bliss and the universe will open doors for you where there were only walls.  </h10> <br>
+<h10 color="#737CA1" style="font-family:'Courier New';" >
+    &nbsp;&nbsp;&nbsp;&nbsp; ― Joseph Campbell &nbsp; :) </h10> </h6>
+
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+        </div>
+      </div>
+    </div> 
+  <!-- /footer -->  
+
+</body>
+</html> 
