@@ -43,17 +43,81 @@
 	<h5> <font color="black">    Research Interests </font></h5>
 
 <p> 
-&emsp;  Mathematical and Computational Biology, Cancer modeling  <br> 
+&emsp;  Mathematical and Computational Biology, Cancer modeling <br> 
+&emsp;  Multi-scale modeling and simulations  <br>
 &emsp;  Stochastic modeling and Uncertainty Quantification  <br>
 &emsp;  Computational methods for high-dimensional stochastic systems  <br>
-&emsp;  Multi-scale modeling and simulations  <br>
 &emsp;  Numerical PDE and High-performance computing  <br><br>
       
  </p> 
 
+	    
 <p>
-<h5>  <font color="black">  1. Mathematical and Computational Biology  </font> </h5>
-<h5>  <font color="black"> 1-1. Modeling Dynamics of Drug Resistance
+<h5>  <font color="black">
+	Optimization of patient specific scanning schedule for radiotherapy 
+</font> </h5>
+</p>
+
+	  
+<p>
+<h5>  <font color="black">
+	Mathematical modeling of cell based immunotherapy, CAR T-cell therapy 
+</font> </h5>
+</p>
+
+	    
+<p>
+<h5>  <font color="black">
+	Mathematical modeling of therapeutic neural stem cells to sites of brain tumors and injury
+</font> </h5>
+	    
+Neural stem cells (NSC) have been shown to be a safe and effective means of treatment of primary brain tumors 
+	    as well as traumatic brain injury. NSCs have demonstrated tropism to remote sites of tumor or injury 
+	    in the brain, and have also been shown to migrate along anisotropic white matter tracts. 
+	    NSCs may be delivered through several routes of administration, including intracerebral, 
+	    intrathecal, and intranasal injection. This project aims to use mathematical modeling of 
+	    chemotaxis-driven migration combined with anatomical features of the brain to predict--and 
+	    subsequently improve--the efficiency of administration of NSCs to sites of tumor or injury. 
+	    The models will be calibrated from pre-clinical animal models and compared with data collected 
+	    from patients treated at City of Hope.	    
+	    
+</p>
+
+	  
+
+
+<p> 
+<h5>  <font color="black"> Continuum Cell State models from Single-cell Gene Sequencing Data </font> </h5>
+
+Single-cell RNA sequencing data (scRNA-seq) data provides the gene expression level that is in the dimensionality of O(10<sup>5</sup>) per each individual cell. 
+By applying dimension reduction techniques, 
+the data reveals a continuum cell state, that 
+changes the classical view of cell biology assuming discrete cell states. 
+We first study whether the assumption of continuum cell states yields distinct results from discrete cell state 
+models, 
+particularly in the context of anti-cancer drug resistance [11], 
+by comparing the binary cell state model of drug-sensitive and drug-resistant to the continuum resistance model. 
+Assuming continuous state may result in different dynamics when compared with the predictions of classical discrete models, and we classify the continuum models when they yield different dynamical patterns in the emerging heterogeneity in response to chemotherapy. 
+Further, 
+we develop a continuum cell state model using the gene data of hematopoietic stem cells (HSC) [10]. Diffusion mapping is applied to the data to reduce dimensionality.  
+The trajectories of cell states in the continuum differentiation space 
+are abstracted 
+in the first few principal diffusion component space 
+as a graph, then modeled as directed and random movement on the graph with PDEs. 
+We simulate normal and abnormal differentiation processes 
+(e.g. acute myeloid leukemia (AML) progression), and predict the emergence of cells in novel intermediate states of differentiation, that is consistent with 
+the experiments of AML mouse mode. 
+
+<center>
+<img src="img/AMLGraph.png" height="92" width="110"> 
+<img src="img/AMLEdge.png" height="92" width="257"> 
+</center>
+      
+</p>
+
+	    
+<p>
+<h5>  <font color="black"> Modeling Dynamics of Drug Resistance
       and Spatial Heterogeneity in Tumor  </font> </h5>
 Drug resistance is a major challenge to successful cancer treatments. For a better understanding of chemotherapy-induced selection of drug-resistant traits during tumor growth, we develop a mathematical model to study the dynamics of drug resistance in solid tumor [7,9]. 
 Our model follows the dynamics of the tumor, assuming that the cancer cell population depends on a phenotype variable that corresponds to the resistance level to a cytotoxic drug. 
@@ -85,7 +149,7 @@ An estimation of expansion rate of the tumor boundary and the time of relapse ar
 
 
 <p> 
-<h5>  <font color="black"> 1-2. Study of Combination Therapy in Cancer Treatments </font> </h5>
+<h5>  <font color="black"> Study of Combination Therapy in Cancer Treatments </font> </h5>
 
 Designing effective anti-cancer strategies can be enhanced by 
 mathematical models and techniques. We model and study 
@@ -110,40 +174,8 @@ resistant cells to each drug.
 
 
 <p> 
-<h5>  <font color="black"> 1-3. Continuum Cell State models from High-dimensional Gene Expression Data </font> </h5>
 
-Single-cell RNA sequencing data (scRNA-seq) data provides the gene expression level that is in the dimensionality of O(10<sup>5</sup>) per each individual cell. 
-By applying dimension reduction techniques, 
-the data reveals a continuum cell state, that 
-changes the classical view of cell biology assuming discrete cell states. 
-We first study whether the assumption of continuum cell states yields distinct results from discrete cell state 
-models, 
-particularly in the context of anti-cancer drug resistance [11], 
-by comparing the binary cell state model of drug-sensitive and drug-resistant to the continuum resistance model. 
-Assuming continuous state may result in different dynamics when compared with the predictions of classical discrete models, and we classify the continuum models when they yield different dynamical patterns in the emerging heterogeneity in response to chemotherapy. 
-Further, 
-we develop a continuum cell state model using the gene data of hematopoietic stem cells (HSC) [10]. Diffusion mapping is applied to the data to reduce dimensionality.  
-The trajectories of cell states in the continuum differentiation space 
-are abstracted 
-in the first few principal diffusion component space 
-as a graph, then modeled as directed and random movement on the graph with PDEs. 
-We simulate normal and abnormal differentiation processes 
-(e.g. acute myeloid leukemia (AML) progression), and predict the emergence of cells in novel intermediate states of differentiation, that is consistent with 
-the experiments of AML mouse mode. 
-
-<center>
-<img src="img/AMLGraph.png" height="92" width="110"> 
-<img src="img/AMLEdge.png" height="92" width="257"> 
-</center>
-      
-</p>
-
-
-
-<p> 
-
-<h5>  <font color="black"> 2. Uncertainty Quantification </font> </h5>
-<h5>  <font color="black"> 2-1. Modeling and Simulation of Stochastic System with Colored Noise </font> </h5>
+<h5>  <font color="black">  Modeling and Simulation of Stochastic System with Colored Noise </font> </h5>
 
 Evolution equations of the response-excitation probability density
 function (PDF) generalize the existing kinetic equations and enable us
@@ -180,7 +212,7 @@ stiff and localized solutions accurately.
 
 
 <p> 
-<h5>  <font color="black"> 2-2. Efficient Numerical methods for High-dimensional Stochastic Systems </font> </h5>
+<h5>  <font color="black">  Efficient Numerical methods for High-dimensional Stochastic Systems </font> </h5>
 
   High-dimensionality is one of the major challenges in uncertainty quantification. In particular, kinetic models and simulations of realistic physical systems are generally more expensive than moment-based methods, while they provide 
 the PDF that contains complete statistical structure of the stochastic dynamics.   Thus, we develop several algorithms based on 
@@ -213,7 +245,7 @@ The method enables efficient simulation of anisotropic and irregular stochastic 
 
 
 <p>
-<h5>  <font color="black"> 2-3. Representation of Multiple Correlated Stochastic Processes </font> </h5>
+<h5>  <font color="black"> Representation of Multiple Correlated Stochastic Processes </font> </h5>
 
 The Karhunen-Loeve (KL) expansion is an effective mathematical representation of a non-stationary stochastic process used in stochastic simulations. 
 However, the representation is limited to a single process 
